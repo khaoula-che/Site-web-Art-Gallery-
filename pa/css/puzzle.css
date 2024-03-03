@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url('../font/NotoSans-Light.woff2')format('woff2'),
+    url('../font/NotoSans-Light.woff')format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserat';
+    src: url('../font/Montserrat-Light.woff2') format('woff2'),
+         url('../font/Montserrat-Light.woff')format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+html{
+    font-size: 18px;
+    scroll-behavior: smooth;
+    margin-right: 0;
+}
+body{
+    font-family: 'NotoSans';
+    margin-top: 100px;
+    background-color: #e3d4cf;
+}
+#board {
+    width: 360px;
+    height: 360px;
+    background-color: lightblue;
+    border: 5px solid #000000;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+#board img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #000000;
+}
+h3{
+    text-align: center;
+}

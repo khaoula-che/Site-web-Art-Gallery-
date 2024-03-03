@@ -1,0 +1,12 @@
+ErrorDocument 404 /erreurs/404.php
+ErrorDocument 500 /erreurs/500.php
+ErrorDocument 401 /erreurs/401.php
+ErrorDocument 403 /erreurs/403.php
+
+DirectoryIndex index.php
+RewriteEngine On
+RewriteRule ^images/ancienne-image\.jpg$ /images/nouvelle-image.jpg [R=301,L]
+
+RewriteCond %{REQUEST_URI} !/images/.*
+RewriteRule ^(.*\.(gif|jpg|png))$ images/$1 [QSA,L]
+
